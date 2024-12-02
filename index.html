@@ -5,10 +5,252 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Absaroka</title>
+    <link rel="icon" type="image/ico" href="assets/img/favicon.png" />
 </head>
 
 <body>
+    <style>
+        .hero-container {
+            background-color: #000;
+            display: flex;
+            padding-bottom: 183px;
+            flex-direction: column;
+            overflow: hidden;
+        }
 
+        .header-section {
+            display: flex;
+            width: 100%;
+            padding-bottom: 77px;
+            flex-direction: column;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .overlay-mask {
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            width: 100%;
+            padding-bottom: 74px;
+            flex-direction: column;
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            min-height: 1066px;
+            width: 100%;
+            align-items: center;
+            padding: 35px 80px 337px;
+        }
+
+        .background-image {
+            position: absolute;
+            inset: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .nav-content {
+            position: relative;
+            display: flex;
+            margin-bottom: -67px;
+            width: 741px;
+            max-width: 100%;
+            flex-direction: column;
+        }
+
+        .nav-menu {
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            box-shadow: 0 116px 33px rgba(0, 0, 0, 0);
+            display: flex;
+            min-height: 60px;
+            width: 708px;
+            max-width: 100%;
+            flex-direction: column;
+            align-items: center;
+            font-family: Inter, sans-serif;
+            font-weight: 700;
+            line-height: 1.4;
+            justify-content: center;
+            padding: 19px 31px;
+        }
+
+        .menu-items {
+            display: flex;
+            align-items: center;
+            gap: 40px 55px;
+            justify-content: start;
+            flex-wrap: wrap;
+        }
+
+        .menu-link {
+            align-self: stretch;
+            white-space: nowrap;
+            margin: auto 0;
+            color: #fff;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        .hero-content {
+            display: flex;
+            margin-top: 130px;
+            align-items: center;
+            gap: 40px 128px;
+            font-family: Lexend, sans-serif;
+            font-weight: 400;
+            justify-content: start;
+        }
+
+        .hero-text {
+            align-self: stretch;
+            display: flex;
+            min-width: 240px;
+            width: 741px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: auto 0;
+        }
+
+        .logo {
+            aspect-ratio: 1.53;
+            object-fit: contain;
+            object-position: center;
+            width: 220px;
+            max-width: 100%;
+        }
+
+        .hero-title {
+            font-size: 70px;
+            font-weight: 300;
+            line-height: 88px;
+            text-align: center;
+            align-self: stretch;
+            margin-top: 32px;
+            font-family: "DM Serif Display", serif;
+        }
+
+        .hero-description {
+            font-family: Inter, sans-serif;
+            line-height: 24px;
+            text-align: center;
+            margin-top: 32px;
+            color: #fff;
+        }
+
+        .cta-button {
+            align-self: stretch;
+            border-radius: 5px;
+            margin-top: 32px;
+            min-height: 40px;
+            width: 135px;
+            max-width: 100%;
+            gap: 10px;
+            line-height: 1.4;
+            padding: 9px 22px;
+            background: linear-gradient(90deg, #bb933b 0%, #dfa931 100%);
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        @media (max-width: 991px) {
+            .hero-container {
+                padding-bottom: 100px;
+            }
+
+            .header-section,
+            .overlay-mask,
+            .content-wrapper,
+            .nav-content,
+            .nav-menu,
+            .menu-items,
+            .hero-content,
+            .hero-text {
+                max-width: 100%;
+            }
+
+            .content-wrapper {
+                padding: 0 20px 100px;
+            }
+
+            .nav-content {
+                margin-bottom: 10px;
+            }
+
+            .nav-menu {
+                padding: 0 20px;
+            }
+
+            .hero-content {
+                margin-top: 40px;
+            }
+
+            .hero-title {
+                font-size: 40px;
+                line-height: 56px;
+            }
+
+            .cta-button {
+                padding: 0 20px;
+            }
+        }
+    </style>
+
+    <div class="hero-container">
+        <div class="header-section">
+            <div class="overlay-mask">
+                <div class="content-wrapper">
+                    <img class="background-image"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/3b474fc28339dcdc4b73260541823b6d39399491ddcf3a7a3199283184805608?placeholderIfAbsent=true&apiKey=d5ff404a046f4d7caae455171d2d1ea9"
+                        alt="" loading="lazy" />
+                    <div class="nav-content">
+                        <nav class="nav-menu" role="navigation" aria-label="Main navigation">
+                            <div class="menu-items">
+                                <a href="#services" class="menu-link">Services</a>
+                                <a href="#about" class="menu-link">About</a>
+                                <a href="#why" class="menu-link">Why Absaroka</a>
+                                <a href="#serve" class="menu-link">Who We Serve</a>
+                                <a href="#contact" class="menu-link">Contact</a>
+                            </div>
+                        </nav>
+                        <div class="hero-content">
+                            <div class="hero-text">
+                                <img class="logo"
+                                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/c4ab640d58ac8c5960316c7572bc17e8245aaa7be894fce7d538109b0c53dede?placeholderIfAbsent=true&apiKey=d5ff404a046f4d7caae455171d2d1ea9"
+                                    alt="Absaroka Global Logo" loading="lazy" />
+                                <h1 class="hero-title">Understanding Today, Anticipating Tomorrow.</h1>
+                                <p class="hero-description">
+                                    We provide data-driven risk insights, empowering businesses to make strategic,
+                                    informed decisions in today's volatile market environment. Turn uncertainty into
+                                    opportunity with expert global analysis.
+                                </p>
+                                <button class="cta-button" type="button">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
