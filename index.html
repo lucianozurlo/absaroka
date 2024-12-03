@@ -2,251 +2,261 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Absaroka</title>
-    <link rel="icon" type="image/ico" href="assets/img/favicon.png" />
+	<meta charset="utf-8">
+	<title>Absaroka</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="manifest" href="assets/favicon/site.webmanifest">
+	<link rel="icon" type="image/ico" href="assets/img/favicon.png" />
+	<link rel="stylesheet" media="screen" href="assets/vendor/boxicons/css/boxicons.min.css">
+	<link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" media="screen" href="assets/css/absaroka.css">
+	<link rel="stylesheet" media="screen" href="assets/css/custom.css">
+
+	<script>
+		(function () {
+			window.onload = function () {
+				const preloader = document.querySelector('.page-loading');
+				preloader.classList.remove('active');
+				setTimeout(function () {
+					preloader.remove();
+				}, 1000);
+			};
+		})();
+	</script>
 </head>
 
+
 <body>
-    <style>
-        .hero-container {
-            background-color: #000;
-            display: flex;
-            padding-bottom: 183px;
-            flex-direction: column;
-            overflow: hidden;
-        }
 
-        .header-section {
-            display: flex;
-            width: 100%;
-            padding-bottom: 77px;
-            flex-direction: column;
-            font-size: 16px;
-            color: #fff;
-        }
+	<div class="page-loading active">
+		<div class="page-loading-inner">
+			<div class="page-spinner"></div><span>Loading...</span>
+		</div>
+	</div>
 
-        .overlay-mask {
-            background-color: rgba(0, 0, 0, 0.5);
-            display: flex;
-            width: 100%;
-            padding-bottom: 74px;
-            flex-direction: column;
-        }
+	<main class="page-wrapper">
 
-        .content-wrapper {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            min-height: 1066px;
-            width: 100%;
-            align-items: center;
-            padding: 35px 80px 337px;
-        }
+		<header class="header navbar navbar-expand-lg navbar-dark navbar-sticky navbar-stuck">
+			<div class="container px-3">
+				<div id="navbarNav" class="offcanvas offcanvas-end bg-dark">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a href="docs/index.html" class="nav-link">Services</a>
+						</li>
+						<li class="nav-item">
+							<a href="docs/index.html" class="nav-link">About</a>
+						</li>
+						<li class="nav-item">
+							<a href="docs/index.html" class="nav-link">Why Absaroka</a>
+						</li>
+						<li class="nav-item">
+							<a href="docs/index.html" class="nav-link">Who We Serve</a>
+						</li>
+						<li class="nav-item">
+							<a href="docs/index.html" class="nav-link">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
 
-        .background-image {
-            position: absolute;
-            inset: 0;
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            object-position: center;
-        }
+		<section id="intro" class="jarallax bg-dark min-vh-100" data-jarallax data-speed="0.4" data-bs-theme="dark">
+			<span class="position-absolute top-0 start-0 w-100 h-100"
+				style="background: radial-gradient(116.18% 118% at 50% 100%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.15) 100%);"></span>
+			<div class="jarallax-img" style="background-image: url(assets/img/home2.png);">
+			</div>
+			<div class="min-vh-100 d-flex flex-column py-5" style="justify-content: center !important;">
 
-        .nav-content {
-            position: relative;
-            display: flex;
-            margin-bottom: -67px;
-            width: 741px;
-            max-width: 100%;
-            flex-direction: column;
-        }
+				<div class="container position-relative text-center zindex-5 pt-4 pt-md-5 pb-5">
+					<div class="row">
+						<div class="col-xl-10 mx-auto">
+							<img src="assets/img/logo.svg" alt="Absaroka" class="d-inline-block" style="width: 220px">
+							<h1 class="display-1 mb-md-3 pb-3 mt-5">Understanding <span>Today</span><br />
+								Anticipating <span>Tomorrow.</span>
+							</h1>
+							<p class="text-body mx-auto mb-md-5 mb-4 pb-xl-2 pb-md-0 pb-sm-2 color-white"
+								style="max-width: 40vw;">
+								We provide data-driven risk insights, empowering businesses to make strategic, informed
+								decisions in today’s volatile market environment. Turn uncertainty into opportunity with
+								expert global analysis.
+							</p>
+							<a href="#" class="btn btn-lg btn-primary">Learn more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-        .nav-menu {
-            border-radius: 10px;
-            background-color: rgba(0, 0, 0, 0.5);
-            box-shadow: 0 116px 33px rgba(0, 0, 0, 0);
-            display: flex;
-            min-height: 60px;
-            width: 708px;
-            max-width: 100%;
-            flex-direction: column;
-            align-items: center;
-            font-family: Inter, sans-serif;
-            font-weight: 700;
-            line-height: 1.4;
-            justify-content: center;
-            padding: 19px 31px;
-        }
+		<section id="services" class="container pt-1 pt-xl-3 pb-5">
+			<h2 class="h1 text-center pb-3 pb-md-0">Services.</h2>
+			<div class="swiper swiper-nav-onhover mt-n3 mx-n2" data-swiper-options='{
+				"slidesPerView": 1,
+				"spaceBetween": 10,
+				"pagination": {
+					"el": ".swiper-pagination",
+					"clickable": true
+				},
+				"breakpoints": {
+					"600": {
+					"slidesPerView": 2
+					},
+					"1000": {
+					"slidesPerView": 3
+					}
+				}
+				}'>
+				<div class="swiper-wrapper">
 
-        .menu-items {
-            display: flex;
-            align-items: center;
-            gap: 40px 55px;
-            justify-content: start;
-            flex-wrap: wrap;
-        }
+					<div class="swiper-slide h-auto py-5">
+						<div class="card card-hover h-100">
+							<div class="card-body">
+								<img src="assets/img/services_item1.png">
+								<h3 class="h5 pb-1 mb-2">Business Risk<br />Analysis.</h3>
+								<p class="mb-0">Business Risk Analysis reduces your exposure by predicting, tracking,
+									and evaluating political, socioeconomic, and conflict-related factors that could
+									disrupt the status quo, creating potential business challenges or opportunities.</p>
+							</div>
+						</div>
+					</div>
 
-        .menu-link {
-            align-self: stretch;
-            white-space: nowrap;
-            margin: auto 0;
-            color: #fff;
-            text-decoration: none;
-            padding: 5px;
-        }
+					<div class="swiper-slide h-auto py-5">
+						<div class="card card-hover h-100">
+							<div class="card-body">
+								<img src="assets/img/services_item2.png">
+								<h3 class="h5 pb-1 mb-2">Due<br />Diligence.</h3>
+								<p class="mb-0">Our due diligence analysis focuses on identifying and evaluating all
+									potential non-market risks associated with your investment. We provide comprehensive
+									insights into the various factors that could impact your investment's success,
+									allowing you to navigate challenges and seize opportunities with confidence.</p>
+							</div>
+						</div>
+					</div>
 
-        .hero-content {
-            display: flex;
-            margin-top: 130px;
-            align-items: center;
-            gap: 40px 128px;
-            font-family: Lexend, sans-serif;
-            font-weight: 400;
-            justify-content: start;
-        }
+					<div class="swiper-slide h-auto py-5">
+						<div class="card card-hover h-100">
+							<div class="card-body">
+								<img src="assets/img/services_item3.png">
+								<h3 class="h5 pb-1 mb-2">Travel Risk<br />Analysis.</h3>
+								<p class="mb-0">Travel Risk Analysis provides clients with critical insights into
+									potential security risks and threats related to international travel. Whether for
+									leisure or business, we assess the current security conditions of your destination,
+									develop tailored crisis management strategies, and offer support in arranging
+									security measures if required. </p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination position-relative pt-2 pt-sm-3 mt-4"></div>
+			</div>
+		</section>
 
-        .hero-text {
-            align-self: stretch;
-            display: flex;
-            min-width: 240px;
-            width: 741px;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin: auto 0;
-        }
 
-        .logo {
-            aspect-ratio: 1.53;
-            object-fit: contain;
-            object-position: center;
-            width: 220px;
-            max-width: 100%;
-        }
+		<section id="about-why" class="container my-5 py-lg-5 py-md-4 pt-2 pb-3">
 
-        .hero-title {
-            font-size: 70px;
-            font-weight: 300;
-            line-height: 88px;
-            text-align: center;
-            align-self: stretch;
-            margin-top: 32px;
-            font-family: "DM Serif Display", serif;
-        }
+			<div class="row pb-5 mb-md-4 mb-lg-5">
+				<div class="rellax col-md-7 pb-1 mb-3 pb-md-0 mb-md-0" data-rellax-percentage="0.5"
+					data-rellax-speed="0.8" style="width: 55%;">
+					<a href="#">
+						<img src="assets/img/about.jpg" class="rounded-2">
+					</a>
+				</div>
+				<div class="rellax col-md-5" data-rellax-percentage="0.5" data-rellax-speed="-0.1"
+					style="width: 45%; margin-top: -20px !important;">
+					<div class="ps-md-4 ms-md-2">
+						<h2>About</h2>
+						<p class="d-md-none d-lg-block pb-3 mb-2 mb-md-3">At Absaroka Global, we understand that
+							thriving in today’s dynamic global environment requires more than traditional business
+							strategies. Success now depends on a deep comprehension of both the risks and opportunities
+							presented by an ever-evolving landscape. That’s why we provide tailored, in-depth analyses
+							that go beyond the basics, merging traditional business strategies with geopolitical
+							insights and real-time intelligence.</p>
+						<p class="d-md-none d-lg-block pb-3 mb-2 mb-md-3">
+							Our approach is holistic, examining your business from both strategic and operational
+							perspectives to uncover hidden risks and recognize untapped opportunities. With Absaroka,
+							you can navigate complexities, mitigate uncertainties, and confidently make informed
+							decisions that drive sustainable growth and resilience. We’re here to empower your
+							organization, turning challenges into opportunities and positioning you for long-term
+							success in a complex world.</p>
+						<a href="#" class="btn btn-lg btn-primary">Contact Us</a>
+					</div>
+				</div>
+			</div>
 
-        .hero-description {
-            font-family: Inter, sans-serif;
-            line-height: 24px;
-            text-align: center;
-            margin-top: 32px;
-            color: #fff;
-        }
+			<div class="row pb-5 mb-md-4 mb-lg-5">
+				<div class="rellax col-md-7 order-md-2 pb-1 mb-3 pb-md-0 mb-md-0" data-rellax-percentage="0.5"
+					data-rellax-speed="0.8" style="width: 55%;">
+					<a href="#" class="float-md-end">
+						<img src="assets/img/why.jpg" class="rounded-2">
+					</a>
+				</div>
+				<div class="rellax col-md-5 order-md-1 pt-md-4 pt-lg-5" data-rellax-percentage="0.5"
+					data-rellax-speed="-0.1" style="width: 45%; margin-top: -80px !important;">
+					<div class="text pe-md-4 me-md-2">
+						<h2>Why</h2>
+						<p class="d-md-none d-lg-block pb-3 mb-2 mb-md-3">
+							We recognize that the stakes for businesses operating internationally have never been
+							higher. Geopolitical forces—ranging from demographic shifts to technological disruptions and
+							conflicts—can profoundly impact your operations, investments, and growth. Instead of
+							offering one-size-fits-all solutions, we deliver tailored analysis that empowers you to make
+							informed decisions and navigate the complexities of global environments.
+						</p>
+						<p class="d-md-none d-lg-block pb-3 mb-2 mb-md-3">
+							Our team of experts, with backgrounds in intelligence, military, corporate, and academia, is
+							equipped to provide you with real-time, actionable intelligence on critical geopolitical
+							factors. Our global capabilities enable us to deploy resources wherever you operate,
+							gathering the hard-to-reach insights that matter to your business strategy.
+						</p>
+						<p class="d-md-none d-lg-block pb-3 mb-2 mb-md-3">
+							Absaroka Global is your strategic partner in navigating geopolitical challenges, enabling
+							sustained growth and long-term success. Let us help you turn global risks into strategic
+							advantages, ensuring your business thrives in a complex world.
+						</p>
+						<a href="#" class="btn btn-lg btn-primary">Contact Us</a>
+					</div>
+				</div>
+			</div>
+		</section>
 
-        .cta-button {
-            align-self: stretch;
-            border-radius: 5px;
-            margin-top: 32px;
-            min-height: 40px;
-            width: 135px;
-            max-width: 100%;
-            gap: 10px;
-            line-height: 1.4;
-            padding: 9px 22px;
-            background: linear-gradient(90deg, #bb933b 0%, #dfa931 100%);
-            border: none;
-            color: #fff;
-            cursor: pointer;
-        }
+		<section id="banner" class="position-relative py-5 bg-dark">
+			<span class="position-absolute top-0 start-0 d-dark-mode-block d-none w-100 h-100 bg-secondary"></span>
+			<div class="position-relative container" data-bs-theme="dark" style="
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: flex-end;">
+				<h2 class="h1 text-center">Who We Serve.</h2>
+				<p class="text-body pb-xl-3 pb-lg-2 pb-md-0 pb-sm-2 mx-auto text-center" style="max-width: 45vw">
+					Our clients are globally engaged companies and individuals that face complex questions and
+					challenges related to international operations, supply chains, market expansions, and the impacts of
+					regional conflicts. Our clients include organizations that need expert insight into socio-economic
+					and political issues affecting their industries and regions of interest.</p>
+				<p class="text-body pb-xl-3 pb-lg-2 pb-md-0 pb-sm-2 mx-auto text-center" style="max-width: 45vw">
+					Whether you’re managing risk in volatile regions, navigating regulatory landscapes, or exploring new
+					markets, we provide the intelligence and analysis necessary to help you make informed decisions. We
+					work closely with companies across diverse sectors to address their unique concerns, equipping them
+					with the tools to operate confidently and effectively on a global scale.</p>
+				<img src="assets/img/sellos.png" style="position: absolute;">
+			</div>
+		</section>
 
-        .visually-hidden {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border: 0;
-        }
+		<section id="footer" class="overflow-hidden pt-lg-5 pt-3 pt-sm-4">
+			<div class="container position-relative">
+				<div class="w-100 text-center px-3" style="max-width: 40rem;">
+					<h2 class="display-5 mb-4 pb-2">
+						Contact Our Team <span class="text-primary"></span>
+					</h2>
+					<a href="#" class="btn btn-lg btn-primary">Write Us</a>
+					<img src="assets/img/logo.svg" width="47" alt="Absaroka">
+				</div>
+			</div>
+		</section>
 
-        @media (max-width: 991px) {
-            .hero-container {
-                padding-bottom: 100px;
-            }
+	</main>
 
-            .header-section,
-            .overlay-mask,
-            .content-wrapper,
-            .nav-content,
-            .nav-menu,
-            .menu-items,
-            .hero-content,
-            .hero-text {
-                max-width: 100%;
-            }
-
-            .content-wrapper {
-                padding: 0 20px 100px;
-            }
-
-            .nav-content {
-                margin-bottom: 10px;
-            }
-
-            .nav-menu {
-                padding: 0 20px;
-            }
-
-            .hero-content {
-                margin-top: 40px;
-            }
-
-            .hero-title {
-                font-size: 40px;
-                line-height: 56px;
-            }
-
-            .cta-button {
-                padding: 0 20px;
-            }
-        }
-    </style>
-
-    <div class="hero-container">
-        <div class="header-section">
-            <div class="overlay-mask">
-                <div class="content-wrapper">
-                    <img class="background-image" src="assets/img/home.png" alt="" loading="lazy" />
-                    <div class="nav-content">
-                        <nav class="nav-menu" role="navigation" aria-label="Main navigation">
-                            <div class="menu-items">
-                                <a href="#services" class="menu-link">Services</a>
-                                <a href="#about" class="menu-link">About</a>
-                                <a href="#why" class="menu-link">Why Absaroka</a>
-                                <a href="#serve" class="menu-link">Who We Serve</a>
-                                <a href="#contact" class="menu-link">Contact</a>
-                            </div>
-                        </nav>
-                        <div class="hero-content">
-                            <div class="hero-text">
-                                <img class="logo" src="assets/img/logo.svg" alt="Absaroka Global Logo" loading="lazy" />
-                                <h1 class="hero-title">Understanding Today, Anticipating Tomorrow.</h1>
-                                <p class="hero-description">
-                                    We provide data-driven risk insights, empowering businesses to make strategic,
-                                    informed decisions in today's volatile market environment. Turn uncertainty into
-                                    opportunity with expert global analysis.
-                                </p>
-                                <button class="cta-button" type="button">Learn More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+	<script src="assets/vendor/rellax/rellax.min.js"></script>
+	<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+	<script src="assets/js/absaroka.js"></script>
 </body>
 
 </html>
