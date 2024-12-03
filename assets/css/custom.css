@@ -1,3 +1,4 @@
+/** LOADING **/
 .page-loading {
     position: fixed;
     top: 0;
@@ -142,7 +143,6 @@
     font-size: 16px;
     cursor: pointer;
     box-shadow: 0 0 0 var(--si-primary) !important;
-    transition: all .3s ease-in-out;
 }
 
 .btn:hover {
@@ -160,6 +160,18 @@ p {
     font-size: 16px;
     font-weight: 300 !important;
     line-height: 1.5;
+}
+
+/** ANIM **/
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity .6s ease-out var(--delay, 0s), transform .6s ease-out var(--delay, 0s), box-shadow .3s ease-in-out;
+}
+
+.scroll-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /** BODY **/
@@ -215,7 +227,7 @@ header #navbarNav li a:hover {
 
 /** INTRO **/
 #intro .intro-bg {
-    background: linear-gradient(0deg, #000000 50%, #00000066 75%, #00000080 90%);
+    background: linear-gradient(0deg, #000000 50%, #00000080 90%);
     background-size: 100% 200%;
     background-position: 0% 0%;
     transition: background-position 2s ease;
@@ -264,9 +276,11 @@ header #navbarNav li a:hover {
 #intro h1.display-1 {
     font-size: 70px;
     line-height: 1.25;
+    display: flex;
+    flex-direction: column;
 }
 
-#intro h1.display-1 span {
+#intro h1.display-1 span.color {
     color: var(--si-primary);
 }
 
