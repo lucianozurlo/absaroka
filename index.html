@@ -47,9 +47,6 @@
 							<a href="#about" class="nav-link scroll-link">About</a>
 						</li>
 						<li class="nav-item">
-							<a href="#why-absaroka" class="nav-link scroll-link">Why Absaroka</a>
-						</li>
-						<li class="nav-item">
 							<a href="#who-we-serve" class="nav-link scroll-link">Who We Serve</a>
 						</li>
 						<li class="nav-item">
@@ -192,7 +189,6 @@
 				<div class="rellax col-md-5 order-md-1 pt-md-4 pt-lg-5" data-rellax-percentage="0.5"
 					data-rellax-speed="-0.1" style="width: 45%; margin-top: -80px !important;">
 					<div class="text pe-md-4 me-md-2">
-						<h2>Why</h2>
 						<p class="d-md-none d-lg-block pb-3 mb-2 mb-md-3">
 							We recognize that the stakes for businesses operating internationally have never been
 							higher. Geopolitical forces—ranging from demographic shifts to technological disruptions and
@@ -258,15 +254,12 @@
 			link.addEventListener('click', function (e) {
 				e.preventDefault();
 
-				// Obtener el ID del destino
 				const targetId = this.getAttribute('href').slice(1);
 				const targetElement = document.getElementById(targetId);
 
 				if (targetElement) {
-					// Obtener la posición del elemento y restar 100px
-					const offsetTop = targetElement.getBoundingClientRect().top + window.pageYOffset - 111;
+					const offsetTop = targetElement.getBoundingClientRect().top + window.pageYOffset - 120;
 
-					// Hacer el scroll suave
 					window.scrollTo({
 						top: offsetTop,
 						behavior: 'smooth'
