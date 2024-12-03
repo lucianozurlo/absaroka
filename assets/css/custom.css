@@ -215,14 +215,35 @@ header #navbarNav li a:hover {
 
 /** INTRO **/
 #intro .intro-bg {
-    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.5) 90%);
+    background: linear-gradient(0deg, #000000 50%, rgba(0, 0, 0, 0.5) 90%);
+    background-size: 100% 200%;
+    background-position: 0% 0%;
+    transition: background-position 2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#intro .intro-bg.animate {
+    animation: gradientMove 3s ease-in-out forwards;
+}
+
+@keyframes gradientMove {
+    from {
+        background-position: 0% 100%;
+    }
+
+    to {
+        background-position: 0% 0%;
+    }
 }
 
 #intro .jarallax-img {
     background-image: url(../img/home.jpg);
 }
 
-#intro .content {
+#intro .jarallax-img #intro .content {
     justify-content: center !important;
 }
 
@@ -233,6 +254,11 @@ header #navbarNav li a:hover {
 #intro .container p {
     margin-bottom: 25px !important;
     max-width: 800px;
+}
+
+#intro .content {
+    display: flex !important;
+    justify-content: center;
 }
 
 #intro h1.display-1 {
@@ -384,4 +410,6 @@ header #navbarNav li a:hover {
 
 #contact .btn {
     margin-top: 40px;
+    background: linear-gradient(var(--si-primary), var(--si-primary)) padding-box,
+        linear-gradient(to right, #fff, var(--si-primary)) border-box;
 }

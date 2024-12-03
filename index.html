@@ -254,6 +254,14 @@
 				}
 			});
 		});
+
+		document.addEventListener('DOMContentLoaded', () => {
+			const bg = document.querySelector('.intro-bg');
+			requestAnimationFrame(() => {
+				bg.classList.add('animate');
+			});
+		});
+
 	</script>
 	<script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
 	<script src="assets/vendor/rellax/rellax.min.js"></script>
