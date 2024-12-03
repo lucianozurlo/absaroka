@@ -215,7 +215,7 @@ header #navbarNav li a:hover {
 
 /** INTRO **/
 #intro .intro-bg {
-    background: linear-gradient(0deg, #000000 50%, rgba(0, 0, 0, 0.5) 90%);
+    background: linear-gradient(0deg, #000000 50%, #00000066 75%, #00000080 90%);
     background-size: 100% 200%;
     background-position: 0% 0%;
     transition: background-position 2s ease;
