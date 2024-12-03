@@ -128,6 +128,39 @@
     color: var(--si-primary)
 }
 
+.btn {
+    min-height: 40px;
+    height: 40px;
+    min-width: 135px;
+    width: 135px;
+    background: linear-gradient(#000, #000) padding-box,
+        linear-gradient(to right, #fff, var(--si-primary)) border-box;
+    border: 1px solid #DFA93100;
+    border-radius: 5px !important;
+    color: #fff;
+    padding: 0 !important;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 0 var(--si-primary) !important;
+    transition: all .3s ease-in-out;
+}
+
+.btn:hover {
+    box-shadow: 0 0 20px var(--si-primary) !important;
+    border: 1px solid #DFA931;
+}
+
+h2 {
+    font-size: 50px !important;
+    font-weight: 400 !important;
+    line-height: 1.25 !important;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 300 !important;
+    line-height: 1.5;
+}
 
 /** BODY **/
 html {
@@ -181,6 +214,27 @@ header #navbarNav li a:hover {
 
 
 /** INTRO **/
+#intro .intro-bg {
+    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.5) 90%);
+}
+
+#intro .jarallax-img {
+    background-image: url(../img/home.jpg);
+}
+
+#intro .content {
+    justify-content: center !important;
+}
+
+#intro .container img {
+    width: 220px
+}
+
+#intro .container p {
+    margin-bottom: 25px !important;
+    max-width: 800px;
+}
+
 #intro h1.display-1 {
     font-size: 70px;
     line-height: 1.25;
@@ -190,50 +244,16 @@ header #navbarNav li a:hover {
     color: var(--si-primary);
 }
 
-#intro p {
-    font-size: 16px;
-    margin-bottom: 25px !important;
-}
-
-#intro .btn {
-    height: 40px;
-    width: 135px;
-    /* border: 2px solid; */
-    /* border-image-slice: 1; */
-    border-width: 1px;
-    background: linear-gradient(#000, #000) padding-box,
-        linear-gradient(to right, #fff, var(--si-primary)) border-box;
-    border: 1px solid transparent;
-    border-radius: 5px !important;
-    color: #fff;
-    padding: 0 !important;
-    font-size: 16px;
-    cursor: pointer;
-    box-shadow: 0 0 0 var(--si-primary) !important;
-    transition: all .3s ease-in-out;
-}
-
-#intro .btn:hover {
-    box-shadow: 0 0 10px var(--si-primary) !important;
-    background: linear-gradient(to right, var(--si-primary), var(--si-primary)) border-box;
-}
-
 
 /** SERVICES **/
 #services h2 {
     color: #fff;
-    font-size: 50px !important;
     margin-bottom: 100px;
 }
 
 #services h3 {
     color: #fff;
     font-size: 32px !important;
-}
-
-#services p {
-    font-family: "Lexend", sans-serif;
-    font-weight: 300;
 }
 
 #services .card-hover {
@@ -268,48 +288,32 @@ header #navbarNav li a:hover {
 }
 
 
-/** ABOUT-WHY **/
-#about h2,
-#why-absaroka h2 {
-    color: var(--si-primary);
-    font-size: 50px !important;
-    margin-bottom: 25px;
-    line-height: 1;
+/** ABOUT **/
+#about .picture {
+    width: 55%;
 }
 
-#about p,
-#why-absaroka p {
+#about .text {
+    width: 45%;
+}
+
+#about .hero .text {
+    margin-top: -20px !important;
+}
+
+#about h2 {
+    color: var(--si-primary);
+    margin-bottom: 25px;
+}
+
+#about p {
     color: #fff;
-    font-weight: 300;
-    line-height: 1.5;
     padding-bottom: 0 !important;
     margin-bottom: 10px;
 }
 
-#about .btn,
-#why-absaroka .btn {
+#about .btn {
     margin-top: 10px;
-    height: 40px;
-    width: 135px;
-    /* border: 2px solid; */
-    /* border-image-slice: 1; */
-    border-width: 1px;
-    background: linear-gradient(#000, #000) padding-box,
-        linear-gradient(to right, #fff, var(--si-primary)) border-box;
-    border: 1px solid transparent;
-    border-radius: 5px !important;
-    color: #fff;
-    padding: 0 !important;
-    font-size: 16px;
-    cursor: pointer;
-    box-shadow: 0 0 0 var(--si-primary) !important;
-    transition: all .3s ease-in-out;
-}
-
-#about .btn:hover,
-#why-absaroka .btn:hover {
-    box-shadow: 0 0 10px var(--si-primary) !important;
-    background: linear-gradient(to right, var(--si-primary), var(--si-primary)) border-box;
 }
 
 
@@ -317,29 +321,32 @@ header #navbarNav li a:hover {
 #who-we-serve {
     background-image: url(../img/banner.jpg);
     background-position: bottom left;
+    background-size: cover;
 }
 
 #who-we-serve .container {
     margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 #who-we-serve h2 {
     color: #222;
-    font-size: 50px !important;
     margin: 10px 0 40px;
-    line-height: 1;
 }
 
 #who-we-serve p {
+    max-width: 45vw;
     color: #222 !important;
     margin-bottom: 10px;
-    line-height: 1.5;
 }
 
 #who-we-serve img {
-    position: absolute;
-    max-width: 30vw;
-    transform: translateY(200px);
+    position: absolute !important;
+    max-width: 620px;
+    transform: translateY(211px);
 }
 
 
@@ -358,12 +365,16 @@ header #navbarNav li a:hover {
 }
 
 #contact .container,
-#contact .container div {
+#contact .container .content {
     width: 100%;
     display: flex !important;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+
+#contact .container .content {
+    max-width: 40rem;
 }
 
 #contact img {
@@ -373,22 +384,4 @@ header #navbarNav li a:hover {
 
 #contact .btn {
     margin-top: 40px;
-    height: 40px;
-    width: 135px;
-    border-width: 1px;
-    background: linear-gradient(var(--si-primary), var(--si-primary)) padding-box,
-        linear-gradient(to right, #fff, var(--si-primary)) border-box;
-    border: 1px solid transparent;
-    border-radius: 5px !important;
-    color: #fff;
-    padding: 0 !important;
-    font-size: 16px;
-    cursor: pointer;
-    box-shadow: 0 0 0 var(--si-primary) !important;
-    transition: all .3s ease-in-out;
-}
-
-#contact .btn:hover {
-    box-shadow: 0 0 10px var(--si-primary) !important;
-    background: linear-gradient(to right, var(--si-primary), var(--si-primary)) border-box;
 }
