@@ -130,6 +130,10 @@
 
 
 /** BODY **/
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #000;
 }
@@ -265,14 +269,16 @@ header #navbarNav li a:hover {
 
 
 /** ABOUT-WHY **/
-#about-why h2 {
+#about h2,
+#why-absaroka h2 {
     color: var(--si-primary);
     font-size: 50px !important;
     margin-bottom: 25px;
     line-height: 1;
 }
 
-#about-why p {
+#about p,
+#why-absaroka p {
     color: #fff;
     font-weight: 300;
     line-height: 1.5;
@@ -280,7 +286,8 @@ header #navbarNav li a:hover {
     margin-bottom: 10px;
 }
 
-#about-why .btn {
+#about .btn,
+#why-absaroka .btn {
     margin-top: 10px;
     height: 40px;
     width: 135px;
@@ -299,36 +306,37 @@ header #navbarNav li a:hover {
     transition: all .3s ease-in-out;
 }
 
-#about-why .btn:hover {
+#about .btn:hover,
+#why-absaroka .btn:hover {
     box-shadow: 0 0 10px var(--si-primary) !important;
     background: linear-gradient(to right, var(--si-primary), var(--si-primary)) border-box;
 }
 
 
-/** BANNER **/
-#banner {
+/** Who-We-Serve **/
+#who-we-serve {
     background-image: url(../img/banner.jpg);
     background-position: bottom left;
 }
 
-#banner .container {
+#who-we-serve .container {
     margin-bottom: 40px;
 }
 
-#banner h2 {
+#who-we-serve h2 {
     color: #222;
     font-size: 50px !important;
     margin: 10px 0 40px;
     line-height: 1;
 }
 
-#banner p {
+#who-we-serve p {
     color: #222 !important;
     margin-bottom: 10px;
     line-height: 1.5;
 }
 
-#banner img {
+#who-we-serve img {
     position: absolute;
     max-width: 30vw;
     transform: translateY(200px);
@@ -336,21 +344,21 @@ header #navbarNav li a:hover {
 
 
 /** FOOTER **/
-#footer {
+#contact {
     /* padding-top: 200px !important; */
     height: 900px;
-    background-image: url(../img/footer.jpg);
+    background-image: url(../img/contact.jpg);
     background-size: cover;
     display: flex;
     align-items: center;
 }
 
-#footer h2 {
+#contact h2 {
     color: #fff;
 }
 
-#footer .container,
-#footer .container div {
+#contact .container,
+#contact .container div {
     width: 100%;
     display: flex !important;
     justify-content: center;
@@ -358,12 +366,12 @@ header #navbarNav li a:hover {
     align-items: center;
 }
 
-#footer img {
+#contact img {
     margin-top: 70px;
     width: 150px;
 }
 
-#footer .btn {
+#contact .btn {
     margin-top: 40px;
     height: 40px;
     width: 135px;
@@ -380,7 +388,7 @@ header #navbarNav li a:hover {
     transition: all .3s ease-in-out;
 }
 
-#footer .btn:hover {
+#contact .btn:hover {
     box-shadow: 0 0 10px var(--si-primary) !important;
     background: linear-gradient(to right, var(--si-primary), var(--si-primary)) border-box;
 }

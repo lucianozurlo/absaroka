@@ -41,19 +41,19 @@
 				<div id="navbarNav" class="offcanvas offcanvas-end bg-dark">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 						<li class="nav-item">
-							<a href="docs/index.html" class="nav-link">Services</a>
+							<a href="#services" class="nav-link scroll-link">Services</a>
 						</li>
 						<li class="nav-item">
-							<a href="docs/index.html" class="nav-link">About</a>
+							<a href="#about" class="nav-link scroll-link">About</a>
 						</li>
 						<li class="nav-item">
-							<a href="docs/index.html" class="nav-link">Why Absaroka</a>
+							<a href="#why-absaroka" class="nav-link scroll-link">Why Absaroka</a>
 						</li>
 						<li class="nav-item">
-							<a href="docs/index.html" class="nav-link">Who We Serve</a>
+							<a href="#who-we-serve" class="nav-link scroll-link">Who We Serve</a>
 						</li>
 						<li class="nav-item">
-							<a href="docs/index.html" class="nav-link">Contact</a>
+							<a href="#contact" class="nav-link scroll-link">Contact</a>
 						</li>
 					</ul>
 				</div>
@@ -80,7 +80,7 @@
 								decisions in today’s volatile market environment. Turn uncertainty into opportunity with
 								expert global analysis.
 							</p>
-							<a href="#" class="btn btn-lg btn-primary">Learn more</a>
+							<a href="#services" class="btn btn-lg btn-primary scroll-link">Learn more</a>
 						</div>
 					</div>
 				</div>
@@ -151,7 +151,7 @@
 		</section>
 
 
-		<section id="about-why" class="container my-5 py-lg-5 py-md-4 pt-2 pb-3">
+		<section id="about" class="container my-5 py-lg-5 py-md-4 pt-2 pb-3">
 
 			<div class="row pb-5 mb-md-4 mb-lg-5">
 				<div class="rellax col-md-7 pb-1 mb-3 pb-md-0 mb-md-0" data-rellax-percentage="0.5"
@@ -182,7 +182,7 @@
 				</div>
 			</div>
 
-			<div class="row pb-5 mb-md-4 mb-lg-5">
+			<div id="why-absaroka" class="row pb-5 mb-md-4 mb-lg-5">
 				<div class="rellax col-md-7 order-md-2 pb-1 mb-3 pb-md-0 mb-md-0" data-rellax-percentage="0.5"
 					data-rellax-speed="0.8" style="width: 55%;">
 					<a href="#" class="float-md-end">
@@ -217,7 +217,7 @@
 			</div>
 		</section>
 
-		<section id="banner" class="position-relative py-5 bg-dark">
+		<section id="who-we-serve" class="position-relative py-5 bg-dark">
 			<span class="position-absolute top-0 start-0 d-dark-mode-block d-none w-100 h-100 bg-secondary"></span>
 			<div class="position-relative container" data-bs-theme="dark" style="
 				display: flex;
@@ -239,7 +239,7 @@
 			</div>
 		</section>
 
-		<section id="footer" class="overflow-hidden pt-lg-5 pt-3 pt-sm-4">
+		<section id="contact" class="overflow-hidden pt-lg-5 pt-3 pt-sm-4">
 			<div class="container position-relative">
 				<div class="w-100 text-center px-3" style="max-width: 40rem;">
 					<h2 class="display-5 mb-4 pb-2">
@@ -253,6 +253,28 @@
 
 	</main>
 
+	<script>
+		document.querySelectorAll('.scroll-link').forEach(link => {
+			link.addEventListener('click', function (e) {
+				e.preventDefault();
+
+				// Obtener el ID del destino
+				const targetId = this.getAttribute('href').slice(1);
+				const targetElement = document.getElementById(targetId);
+
+				if (targetElement) {
+					// Obtener la posición del elemento y restar 100px
+					const offsetTop = targetElement.getBoundingClientRect().top + window.pageYOffset - 111;
+
+					// Hacer el scroll suave
+					window.scrollTo({
+						top: offsetTop,
+						behavior: 'smooth'
+					});
+				}
+			});
+		});
+	</script>
 	<script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
 	<script src="assets/vendor/rellax/rellax.min.js"></script>
 	<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
