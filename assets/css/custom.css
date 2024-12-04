@@ -303,8 +303,8 @@ header #navbarNav li a:hover {
         linear-gradient(-40deg, var(--si-primary), #000, var(--si-primary)) border-box;
     border: 1px solid transparent;
     border-radius: 5px !important;
-    margin-right: 35px !important;
-    margin-left: 35px !important;
+    margin-right: 35px;
+    margin-left: 35px;
     transition: all .3s ease-in-out;
 }
 
