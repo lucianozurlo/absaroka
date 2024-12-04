@@ -385,7 +385,8 @@ header #navbarNav li a:hover {
 
 #who-we-serve img {
     position: absolute !important;
-    max-width: 620px;
+    max-width: 80%;
+    width: 620px;
     transform: translateY(240px);
 }
 
