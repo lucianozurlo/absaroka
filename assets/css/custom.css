@@ -359,7 +359,7 @@ header #navbarNav li a:active {
 #about .text {
     width: 45%;
     margin-top: -20px !important;
-    padding: 5px 10px 0 10px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
 }
