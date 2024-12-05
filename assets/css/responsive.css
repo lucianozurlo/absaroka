@@ -115,4 +115,8 @@
     #services h2 {
         margin-bottom: 70px;
     }
+
+    #who-we-serve img {
+        transform: translateY(180px);
+    }
 }
