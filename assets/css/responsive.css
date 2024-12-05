@@ -93,8 +93,21 @@
 }
 
 @media (max-width: 669px) {
+    header {
+        display: none;
+    }
+
     .container {
         max-width: 100% !important;
+    }
+
+    .jarallax .jarallax-img {
+        background-position-x: left;
+    }
+
+
+    #intro .content {
+        padding-top: 0 !important;
     }
 
     #intro h1.display-1 {
@@ -108,7 +121,7 @@
         margin-bottom: 10px;
     }
 
-    #services {
+    .jarallax .jarallax-img #services {
         margin-bottom: 0;
     }
 
