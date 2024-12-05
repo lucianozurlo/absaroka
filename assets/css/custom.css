@@ -145,9 +145,10 @@
     box-shadow: 0 0 0 var(--si-primary) !important;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:active {
     box-shadow: 0 0 20px var(--si-primary) !important;
-    border: 1px solid #DFA931;
+    border: 1px solid #DFA931 !important;
 }
 
 h2 {
@@ -180,6 +181,7 @@ html {
 }
 
 body {
+    overflow-x: hidden;
     background-color: #000;
 }
 
@@ -220,7 +222,8 @@ header #navbarNav li a {
     transition: all .3s ease-in-out;
 }
 
-header #navbarNav li a:hover {
+header #navbarNav li a:hover,
+header #navbarNav li a:active {
     text-shadow: 0 0 15px rgba(223, 169, 49, 1)
 }
 
@@ -286,14 +289,29 @@ header #navbarNav li a:hover {
 
 
 /** SERVICES **/
+#services {
+    margin-bottom: 100px;
+}
+
 #services h2 {
     color: #fff;
+    margin-top: 30px;
     margin-bottom: 100px;
 }
 
 #services h3 {
     color: #fff;
     font-size: 32px !important;
+}
+
+#services .cards {
+    display: flex;
+}
+
+#services .card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 #services .card-hover {
@@ -308,9 +326,11 @@ header #navbarNav li a:hover {
     transition: all .3s ease-in-out;
 }
 
-#services .card-hover:hover {
+#services .card-hover:hover,
+#services .card-hover:active {
     background: linear-gradient(#000, #000) padding-box,
         linear-gradient(-40deg, var(--si-primary), #000, var(--si-primary)) border-box;
+    border: 1px solid var(--si-primary);
     box-shadow: 0 0 40px var(--si-primary) !important;
 }
 
@@ -319,6 +339,9 @@ header #navbarNav li a:hover {
     padding: 65px 45px 45px 35px;
     background-image: url(../img/services_bg.jpg);
     background-size: cover;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 #services .card-body img {

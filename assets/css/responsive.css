@@ -18,9 +18,6 @@
         transform: translate(250px, -100px);
     }
 
-    #services .swiper-wrapper .swiper-slide {
-        margin-right: 0 !important;
-    }
 }
 
 @media (max-width: 1250px) {
@@ -44,21 +41,54 @@
 }
 
 @media (max-width: 999px) {
-    #services .swiper-wrapper {
-        transition-property: transform;
+    #services .cards {
         flex-direction: column;
-        align-items: center;
-    }
-
-    #services .swiper-wrapper .swiper-slide {
-        margin-right: 0 !important;
-        width: 70% !important;
-        padding-bottom: 20px !important;
     }
 
     #services .card-body img {
         transform: translateY(-107px);
         right: -5%
+    }
+
+    #services .card-hover {
+        margin-right: 25px;
+        margin-left: 25px;
+        margin-bottom: 60px;
+    }
+
+    #about {
+        width: 95%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about .hero {
+        display: flex;
+    }
+
+    #about .picture {
+        width: 100%;
+    }
+
+    #about .hero {
+        align-content: center;
+        width: 100%;
+    }
+
+    #about .hero {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #about .text {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    #who-we-serve p {
+        max-width: 85vw;
     }
 }
 
@@ -78,14 +108,11 @@
         margin-bottom: 10px;
     }
 
+    #services {
+        margin-bottom: 0;
+    }
+
     #services h2 {
         margin-bottom: 70px;
     }
-
-    #services .swiper-wrapper .swiper-slide {
-        width: 100% !important;
-    }
-
-
-
 }
