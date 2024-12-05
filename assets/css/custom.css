@@ -358,10 +358,22 @@ header #navbarNav li a:active {
 
 #about .text {
     width: 45%;
+    margin-top: -20px !important;
+    padding: 5px 10px 0 10px;
+    display: flex;
+    flex-direction: column;
 }
 
-#about .hero .text {
-    margin-top: -20px !important;
+#about .hero:first-child .text {
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 40px;
+}
+
+#about .hero:last-child .text {
+    align-items: flex-end;
+    text-align: right;
+    padding-right: 40px;
 }
 
 #about h2 {
@@ -420,6 +432,7 @@ header #navbarNav li a:active {
     height: 900px;
     background-image: url(../img/contact.jpg);
     background-size: cover;
+    background-position-x: center;
     display: flex;
     align-items: center;
 }
