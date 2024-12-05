@@ -132,4 +132,11 @@
     #who-we-serve img {
         transform: translateY(180px);
     }
+
+    #who-we-serve .shine {
+        height: 65vw;
+        filter: blur(100px);
+        width: 90vw;
+        transform: translateY(290px);
+    }
 }
