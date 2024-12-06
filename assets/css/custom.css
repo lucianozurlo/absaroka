@@ -337,8 +337,9 @@ header #navbarNav li a:active {
 #services .card-body {
     border-radius: 5px !important;
     padding: 65px 45px 45px 35px;
-    background-image: url(../img/services_bg.jpg);
-    background-size: cover;
+    background-image: url(../img/services_bg.png);
+    background-size: cover !important;
+    background-position-y: bottom !important;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -350,6 +351,9 @@ header #navbarNav li a:active {
     transform: translate(220px, -100px);
 }
 
+#services .card-body img.resp {
+    display: none;
+}
 
 /** ABOUT **/
 #about .picture {
