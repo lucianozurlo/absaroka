@@ -1,0 +1,142 @@
+@media (max-width: 1360px) {
+    .container {
+        max-width: 97% !important;
+    }
+
+    #services .card-body {
+        border-radius: 5px !important;
+        padding: 60px 30px 30px 30px;
+    }
+
+    #services .card-hover {
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+
+    #services .card-body img {
+        max-width: 110px !important;
+        transform: translate(250px, -100px);
+    }
+
+}
+
+@media (max-width: 1250px) {
+    #services .card-body img {
+        max-width: 100px !important;
+        transform: translate(230px, -100px);
+    }
+}
+
+@media (max-width: 1159px) {
+    #services .card-body img {
+        transform: translate(200px, -100px);
+    }
+}
+
+@media (max-width: 1099px) {
+    #services .card-body img {
+        max-width: 95px !important;
+        transform: translate(180px, -100px);
+    }
+}
+
+@media (max-width: 999px) {
+    #services .cards {
+        flex-direction: column;
+    }
+
+    #services .card-body img {
+        transform: translateY(-107px);
+        right: -5%
+    }
+
+    #services .card-hover {
+        margin-right: 25px;
+        margin-left: 25px;
+        margin-bottom: 60px;
+    }
+
+    #about {
+        width: 95%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about .hero {
+        display: flex;
+    }
+
+    #about .picture {
+        width: 100%;
+    }
+
+    #about .hero {
+        align-content: center;
+        width: 100%;
+    }
+
+    #about .hero {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #about .text {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    #who-we-serve p {
+        max-width: 85vw;
+    }
+}
+
+@media (max-width: 669px) {
+    header {
+        display: none;
+    }
+
+    .container {
+        max-width: 100% !important;
+    }
+
+    .jarallax .jarallax-img {
+        background-position-x: left;
+    }
+
+
+    #intro .content {
+        padding-top: 0 !important;
+    }
+
+    #intro h1.display-1 {
+        line-height: 1.1;
+        font-size: 50px;
+        padding: 10px 15px 0;
+    }
+
+    #intro .container img {
+        width: 200px;
+        margin-bottom: 10px;
+    }
+
+    .jarallax .jarallax-img #services {
+        margin-bottom: 0;
+    }
+
+    #services h2 {
+        margin-bottom: 70px;
+    }
+
+    #who-we-serve img {
+        transform: translateY(180px);
+    }
+
+    #who-we-serve .shine {
+        height: 65vw;
+        filter: blur(100px);
+        width: 90vw;
+        transform: translateY(290px);
+    }
+}
