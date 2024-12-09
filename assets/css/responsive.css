@@ -203,6 +203,7 @@
     .offcanvas-header.border-top {
         justify-content: center;
         height: fit-content;
+        padding-bottom: 60px !important;
     }
 
     .offcanvas-header.border-top img {
