@@ -389,10 +389,10 @@
         display: none !important;
     }
 
-    #who-we-serve img {
+    #who-we-serve .img {
+        max-width: 100%;
         transform: translateY(220px);
         width: 117vw;
-        max-width: unset;
     }
 
     #who-we-serve .shine {
