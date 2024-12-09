@@ -39,10 +39,37 @@
 
 		<header class="header navbar navbar-expand-lg navbar-dark navbar-sticky navbar-stuck fixed-top">
 			<div class="container px-3">
-				<div id="navbarNav" class="offcanvas offcanvas-end">
+				<div id="menu">
 					<div class="offcanvas-header border-bottom">
-						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+						<a href="javascript:void(0)" class="btn-close" onclick="closeNav()"></a>
 					</div>
+					<div class="offcanvas-body">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a href="#services" class="nav-link scroll-link" onclick="closeNav()">Services</a>
+							</li>
+							<li class="nav-item">
+								<a href="#about" class="nav-link scroll-link" onclick="closeNav()">About</a>
+							</li>
+							<li class="nav-item">
+								<a href="#who-we-serve" class="nav-link scroll-link" onclick="closeNav()">Who We
+									Serve</a>
+							</li>
+							<li class="nav-item">
+								<a href="#contact" class="nav-link scroll-link" onclick="closeNav()">Contact</a>
+							</li>
+						</ul>
+					</div>
+					<div class="offcanvas-header border-top">
+						<a href="#intro" class="nav-link scroll-link" onclick="closeNav()"><img
+								src="assets/img/logo.svg" alt=""></a>
+					</div>
+				</div>
+				<button type="button" class="navbar-toggler" onclick="openNav()">
+					<span class="navbar-toggler-icon"><img src="assets/img/menu.svg" alt=""></span>
+				</button>
+
+				<div id="navbarNav" class="offcanvas offcanvas-end">
 					<div class="offcanvas-body">
 						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 							<li class="nav-item">
@@ -63,10 +90,7 @@
 						<img src="assets/img/logo.svg" alt="">
 					</div>
 				</div>
-				<button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
-					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"><img src="assets/img/menu.svg" alt=""></span>
-				</button>
+
 			</div>
 		</header>
 
@@ -94,6 +118,7 @@
 				</div>
 			</div>
 		</section>
+
 
 		<section id="services" class="container pt-1 pt-xl-3 pb-5">
 			<h2 class="h1 text-center pb-3 pb-md-0 scroll-animate">Services.</h2>
@@ -139,7 +164,6 @@
 			</div>
 
 		</section>
-
 
 
 		<section id="about" class="container my-5 py-lg-5 py-md-4 pt-2 pb-3">
@@ -322,6 +346,16 @@
 	<script src="assets/vendor/rellax/rellax.min.js"></script>
 	<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 	<script src="assets/js/absaroka.js"></script>
+	<script>
+		function openNav() {
+			document.querySelector("#menu").classList.add("active");
+		}
+
+		function closeNav() {
+			document.querySelector("#menu").classList.remove("active");
+		}
+	</script>
+
 </body>
 
 </html>
