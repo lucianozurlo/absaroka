@@ -137,8 +137,6 @@
         margin-left: 50px;
     }
 
-
-
     .navbar-toggler {
         width: 32px;
         height: 32px;
@@ -260,6 +258,13 @@
 
     #who-we-serve p {
         max-width: 85vw;
+    }
+
+    #who-we-serve .img {
+        background-size: 116vw;
+        width: 620px;
+        height: 150px;
+        transform: translateY(213px);
     }
 }
 

@@ -431,14 +431,14 @@ header #navbarNav li a:active {
 
 #who-we-serve .img {
     position: absolute !important;
-    width: 620px;
-    height: 150px;
     max-width: 100vw;
-    transform: translateY(213px);
+    transform: translateY(323px);
     background-image: url(../img/sellos.png);
-    background-size: 116vw;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
+    width: 625px;
+    height: 100%;
 }
 
 #who-we-serve .shine {
