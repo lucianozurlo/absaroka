@@ -386,6 +386,10 @@ header #navbarNav li a:active {
     padding-right: 40px;
 }
 
+#about .hero:last-child p:first-child {
+    padding-top: 0;
+}
+
 #about h2 {
     color: var(--si-primary);
     margin-bottom: 25px;

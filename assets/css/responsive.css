@@ -383,9 +383,9 @@
         margin-top: 100px;
     } */
 
-    #about .hero:last-child p:first-child {
+    /* #about .hero:last-child p:first-child {
         margin-top: 40px;
-    }
+    } */
 
     #about .btn {
         display: none !important;
