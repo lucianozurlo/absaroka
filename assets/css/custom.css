@@ -230,6 +230,9 @@ header #navbarNav li a:active {
     text-shadow: 0 0 15px rgba(223, 169, 49, 1)
 }
 
+#menu {
+    display: none;
+}
 
 /** INTRO **/
 #intro .intro-bg {
