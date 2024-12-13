@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Absaroka</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="manifest" href="assets/favicon/site.webmanifest">
+	<link rel="icon" type="image/ico" href="assets/img/favicon.png" />
+	<link rel="stylesheet" media="screen" href="assets/vendor/boxicons/css/boxicons.min.css">
+	<link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" media="screen" href="assets/css/absaroka.css">
+	<link rel="stylesheet" media="screen" href="assets/css/custom.css">
+	<link rel="stylesheet" media="screen" href="assets/css/responsive.css">
+
+	<script>
+		(function () {
+			window.onload = function () {
+				const preloader = document.querySelector('.page-loading');
+				preloader.classList.remove('active');
+				setTimeout(function () {
+					preloader.remove();
+				}, 1000);
+			};
+		})();
+	</script>
+</head>
+
+
+<body>
+
+	<div class="page-loading active">
+		<div class="page-loading-inner">
+			<img src="assets/img/favicon.png" alt="">
+			<div class="page-spinner"></div><span>Loading...</span>
+		</div>
+	</div>
+
+	<main class="page-wrapper">
+
+		<header class="header navbar navbar-expand-lg navbar-dark navbar-sticky navbar-stuck fixed-top">
+			<div class="container px-3">
+				<div id="menu">
+					<div class="offcanvas-header border-bottom">
+						<a href="javascript:void(0)" class="btn-close" onclick="closeNav()"></a>
+					</div>
+					<div class="offcanvas-body">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a href="#services" class="nav-link scroll-link" onclick="closeNav()">Services</a>
+							</li>
+							<li class="nav-item">
+								<a href="#about" class="nav-link scroll-link" onclick="closeNav()">About</a>
+							</li>
+							<li class="nav-item">
+								<a href="#who-we-serve" class="nav-link scroll-link" onclick="closeNav()">Who We
+									Serve</a>
+							</li>
+							<li class="nav-item">
+								<a href="#contact" class="nav-link scroll-link" onclick="closeNav()">Contact</a>
+							</li>
+						</ul>
+					</div>
+					<div class="offcanvas-header border-top">
+						<a href="#intro" class="nav-link scroll-link" onclick="closeNav()"><img
+								src="assets/img/logo.svg" alt=""></a>
+					</div>
+				</div>
+				<button type="button" class="navbar-toggler" onclick="openNav()">
+					<span class="navbar-toggler-icon"><img src="assets/img/menu.svg" alt=""></span>
+				</button>
+
+				<div id="navbarNav" class="offcanvas offcanvas-end">
+					<div class="offcanvas-body">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a href="#services" class="nav-link scroll-link">Services</a>
+							</li>
+							<li class="nav-item">
+								<a href="#about" class="nav-link scroll-link">About</a>
+							</li>
+							<li class="nav-item">
+								<a href="#who-we-serve" class="nav-link scroll-link">Who We Serve</a>
+							</li>
+							<li class="nav-item">
+								<a href="#contact" class="nav-link scroll-link">Contact</a>
+							</li>
+						</ul>
+					</div>
+					<div class="offcanvas-header border-top">
+						<img src="assets/img/logo.svg" alt="">
+					</div>
+				</div>
+
+			</div>
+		</header>
+
+		<section id="intro" class="jarallax bg-dark min-vh-100" data-jarallax data-speed="0.4" data-bs-theme="dark">
+			<span class="intro-bg position-absolute top-0 start-0 w-100 h-100"></span>
+			<div class="jarallax-img"></div>
+			<div class="content min-vh-100 d-flex flex-column py-5">
+				<div class="container position-relative text-center zindex-5 pt-4 pt-md-5 pb-5">
+					<div class="row">
+						<div class="col-xl-10 mx-auto">
+							<img src="assets/img/logo.svg" alt="Absaroka" class="d-inline-block scroll-animate">
+							<h1 class="display-1 pb-3 mt-5 scroll-animate">
+								<span class="br">Understanding <span class="color">Today,</span></span>
+								<span class="br">Anticipating <span class="color">Tomorrow</span></span>
+							</h1>
+							<p
+								class="text-body mx-auto mb-md-5 mb-4 pb-xl-2 pb-md-0 pb-sm-2 color-white scroll-animate">
+								We provide data-driven risk insights, empowering businesses to make strategic, informed
+								decisions in today’s volatile market environment. Turn uncertainty into opportunity with
+								expert global analysis.
+							</p>
+							<a href="#services" class="btn btn-lg btn-primary scroll-link scroll-animate">Learn more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="services" class="container pt-1 pt-xl-3 pb-5">
+			<h2 class="h1 text-center pb-3 pb-md-0 scroll-animate">Services</h2>
+
+			<div class="cards">
+
+				<div class="card card-hover">
+					<div class="card-body">
+						<img src="assets/img/services_item1.png">
+						<h3 class="h5 pb-1 mb-4">Business Risk<br />Analysis</h3>
+						<p class="mb-0">Business Risk Analysis reduces your exposure by predicting, tracking,
+							and evaluating political, socioeconomic, and conflict-related factors that could
+							disrupt the status quo, creating potential business challenges or opportunities.</p>
+					</div>
+				</div>
+
+				<div class="card card-hover">
+					<div class="card-body">
+						<img src="assets/img/services_item2.png">
+						<h3 class="h5 pb-1 mb-4">Due<br />Diligence</h3>
+						<p class="mb-0">Our due diligence analysis focuses on identifying and evaluating all
+							potential non-market risks associated with your investment. We provide comprehensive
+							insights into the various factors that could impact your investment's success,
+							allowing you to navigate challenges and seize opportunities with confidence.</p>
+					</div>
+				</div>
+
+				<div class="card card-hover">
+					<div class="card-body">
+						<img src="assets/img/services_item3.png">
+						<h3 class="h5 pb-1 mb-4">Travel Risk<br />Analysis.</h3>
+						<p class="mb-0">Travel Risk Analysis provides clients with critical insights into
+							potential security risks and threats related to international travel. Whether for
+							leisure or business, we assess the current security conditions of your destination,
+							develop tailored crisis management strategies, and offer support in arranging
+							security measures if required.</p>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+
+
+		<section id="about" class="container my-5 py-lg-5 py-md-4 pt-2 pb-3">
+
+			<div class="hero row pb-5 mb-lg-5">
+				<div class="picture rellax col-md-7 pb-1 mb-3 pb-md-0 mb-md-0" data-rellax-percentage="0.5"
+					data-rellax-speed="0.8">
+					<img src="assets/img/about.jpg" class="rounded-2 scroll-animate">
+				</div>
+				<div class="text rellax col-5" data-rellax-percentage="0.5" data-rellax-speed="-0.1">
+					<h2 class="scroll-animate">About</h2>
+					<div class="scroll-animate">
+						<p class="d-lg-block pb-3 mb-3">
+							At Absaroka Global, we understand that
+							thriving in today’s dynamic global environment requires more than traditional business
+							strategies. Success now depends on a deep comprehension of both the risks and opportunities
+							presented by an ever-evolving landscape. That’s why we provide tailored, in-depth analyses
+							that go beyond the basics, merging traditional business strategies with geopolitical
+							insights and real-time intelligence.</p>
+						<p class="d-lg-block pb-3 mb-3">
+							Our approach is holistic, examining your business from both strategic and operational
+							perspectives to uncover hidden risks and recognize untapped opportunities. With Absaroka,
+							you can navigate complexities, mitigate uncertainties, and confidently make informed
+							decisions that drive sustainable growth and resilience. We’re here to empower your
+							organization, turning challenges into opportunities and positioning you for long-term
+							success in a complex world.</p>
+					</div>
+					<a href="mailto:contact@absarokaglobal.com" class="btn btn-lg btn-primary scroll-animate">Contact
+						Us</a>
+				</div>
+			</div>
+
+			<div class="hero row pb-5 mb-lg-5">
+				<div class="picture rellax col-7 order-md-2 pb-1 mb-3 pb-md-0 mb-md-0" data-rellax-percentage="0.5"
+					data-rellax-speed="0.8">
+					<img src="assets/img/about2.jpg" class="rounded-2 scroll-animate">
+				</div>
+				<div class="text rellax col-5 order-md-1 pt-md-4 pt-lg-5" data-rellax-percentage="0.5"
+					data-rellax-speed="-0.1">
+					<h2 class="scroll-animate">Why Absaroka</h2>
+					<div class="scroll-animate">
+
+						<p class="d-lg-block pb-3 mb-3">
+							We recognize that the stakes for businesses operating internationally have never been
+							higher. Geopolitical forces—ranging from demographic shifts to technological disruptions and
+							conflicts—can profoundly impact your operations, investments, and growth. Instead of
+							offering one-size-fits-all solutions, we deliver tailored analysis that empowers you to make
+							informed decisions and navigate the complexities of global environments.
+						</p>
+						<p class="d-lg-block pb-3 mb-3">
+							Our team of experts, with backgrounds in intelligence, military, corporate, and academia, is
+							equipped to provide you with real-time, actionable intelligence on critical geopolitical
+							factors. Our global capabilities enable us to deploy resources wherever you operate,
+							gathering the hard-to-reach insights that matter to your business strategy.
+						</p>
+						<p class="d-lg-block pb-3 mb-3">
+							Absaroka Global is your strategic partner in navigating geopolitical challenges, enabling
+							sustained growth and long-term success. Let us help you turn global risks into strategic
+							advantages, ensuring your business thrives in a complex world.
+						</p>
+					</div>
+					<a href="mailto:contact@absarokaglobal.com"
+						class="btn btn-lg btn-primary scroll-animate scroll-animate">Contact Us</a>
+				</div>
+			</div>
+		</section>
+
+		<section id="who-we-serve" class="position-relative py-5 bg-dark">
+			<span class="position-absolute top-0 start-0 d-dark-mode-block d-none w-100 h-100 bg-secondary"></span>
+			<div class="position-relative container scroll-animate" data-bs-theme="dark">
+				<h2 class="h1 text-center scroll-animate">Who We Serve</h2>
+				<div class="scroll-animate">
+					<p class="text-body pb-xl-3 pb-lg-2 pb-md-0 pb-sm-2 mx-auto text-center">
+						Our clients are globally engaged companies and individuals that face complex questions and
+						challenges related to international operations, supply chains, market expansions, and the
+						impacts of regional conflicts. Our clients include organizations that need expert insight into
+						socio-economic and political issues affecting their industries and regions of interest.</p>
+					<p class="text-body pb-xl-3 pb-lg-2 pb-md-0 pb-sm-2 mx-auto text-center">
+						Whether you’re managing risk in volatile regions, navigating regulatory landscapes, or exploring
+						new markets, we provide the intelligence and analysis necessary to help you make informed
+						decisions. We work closely with companies across diverse sectors to address their unique
+						concerns, equipping them with the tools to operate confidently and effectively on a global
+						scale.</p>
+				</div>
+				<div class="img scroll-animate"></div>
+				<div class="shine"></div>
+			</div>
+		</section>
+
+		<section id="contact" class="overflow-hidden pt-lg-5 pt-3 pt-sm-4">
+			<div class="container position-relative">
+				<div class="content w-100 text-center px-3">
+					<h2 class="display-5 mb-4 pb-2 scroll-animate">
+						Contact Our Team <span class="text-primary"></span>
+					</h2>
+					<a href="mailto:contact@absarokaglobal.com" class="btn btn-lg btn-primary scroll-animate">Write
+						Us</a>
+					<img class="scroll-animate" src="assets/img/logo.svg" width="47" alt="Absaroka">
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<script>
+		// SMOOTH SCROLL
+		document.querySelectorAll('.scroll-link').forEach(link => {
+			link.addEventListener('click', function (e) {
+				e.preventDefault();
+
+				const targetId = this.getAttribute('href').slice(1);
+				const targetElement = document.getElementById(targetId);
+
+				if (targetElement) {
+					const offsetTop = targetElement.getBoundingClientRect().top + window.pageYOffset - 120;
+
+					window.scrollTo({
+						top: offsetTop,
+						behavior: 'smooth'
+					});
+				}
+			});
+		});
+
+		// INTRO GRADIENT
+		document.addEventListener('DOMContentLoaded', () => {
+			const bg = document.querySelector('.intro-bg');
+			requestAnimationFrame(() => {
+				bg.classList.add('animate');
+			});
+		});
+
+		// ANIM
+		document.addEventListener('DOMContentLoaded', () => {
+			const animateElements = document.querySelectorAll('.scroll-animate');
+			let delay = 0;
+
+			const observerOptions = {
+				root: null,
+				rootMargin: '0px',
+				threshold: 0.05
+			};
+
+			const observer = new IntersectionObserver((entries, observer) => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						entry.target.style.setProperty('--delay', `${delay}s`);
+						entry.target.classList.add('visible');
+						delay += 0.05;
+						observer.unobserve(entry.target);
+					}
+				});
+			}, observerOptions);
+
+			animateElements.forEach(el => {
+				observer.observe(el);
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const cards = document.querySelectorAll('.card');
+			let maxHeight = 0;
+
+			cards.forEach(card => {
+				card.style.height = 'auto';
+				const cardHeight = card.offsetHeight;
+				if (cardHeight > maxHeight) {
+					maxHeight = cardHeight;
+				}
+			});
+
+			cards.forEach(card => {
+				card.style.height = `${maxHeight}px`;
+			});
+		});
+	</script>
+	<script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+	<script src="assets/vendor/rellax/rellax.min.js"></script>
+	<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+	<script src="assets/js/absaroka.js"></script>
+	<script>
+		function openNav() {
+			document.querySelector("#menu").classList.add("active");
+		}
+
+		function closeNav() {
+			document.querySelector("#menu").classList.remove("active");
+		}
+	</script>
+
+</body>
+
+</html>

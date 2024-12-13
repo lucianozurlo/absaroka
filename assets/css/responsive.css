@@ -1,0 +1,428 @@
+@media (max-width: 1360px) {
+    .container {
+        max-width: 97% !important;
+    }
+
+    #services .card-body {
+        border-radius: 5px !important;
+        padding: 60px 30px 30px 30px;
+    }
+
+    #services .card-hover {
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+
+    #services .card-body img {
+        max-width: 110px !important;
+        transform: translate(250px, -100px);
+    }
+
+}
+
+@media (max-width: 1250px) {
+    #services .card-body img {
+        max-width: 100px !important;
+        transform: translate(230px, -100px);
+    }
+}
+
+@media (max-width: 1159px) {
+    #services .card-body img {
+        transform: translate(200px, -100px);
+    }
+}
+
+@media (max-width: 1099px) {
+    #services .card-body img {
+        max-width: 95px !important;
+        transform: translate(180px, -100px);
+    }
+}
+
+@media (max-width: 999px) {
+    main {
+        width: 100vw;
+    }
+
+    header {
+        margin-top: 0;
+        padding: 0 !important;
+        background-color: transparent !important;
+    }
+
+    header .container {
+        padding: 32px !important;
+        justify-content: flex-end;
+    }
+
+    header #navbarNav {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 100% !important;
+        max-height: 100%;
+        border-radius: 0;
+        padding: 0;
+        display: none !important;
+    }
+
+    .navbar-toggler-icon,
+    .navbar-toggler-icon::before,
+    .navbar-toggler-icon::after {
+        background-color: #DFA931;
+    }
+
+    .navbar>.container,
+    .navbar>.container-fluid,
+    .navbar>.container-sm,
+    .navbar>.container-md,
+    .navbar>.container-lg,
+    .navbar>.container-xl,
+    .navbar>.container-xxl {
+        justify-content: flex-end !important;
+        display: flex;
+        padding: 0 22px !important;
+        height: 100px;
+        width: 100vw;
+        margin: 0;
+    }
+
+    header #navbarNav {
+        background-color: #000000bf !important;
+    }
+
+    header #menu {
+        background-color: #000000ee !important;
+        height: 100%;
+        max-height: 100%;
+        width: 100%;
+        max-width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        overflow-x: hidden;
+        transform: translateX(100%);
+        display: flex;
+        flex-direction: column;
+        transition: all .3s ease-in-out;
+    }
+
+    header #menu.active {
+        transform: translateX(0%);
+    }
+
+    header #menu ul.navbar-nav {
+        width: 100%;
+    }
+
+    #menu a {
+        font-size: 26px;
+        font-weight: 700;
+        letter-spacing: .1px;
+        text-shadow: 0 0 0 rgba(223, 169, 49, 1);
+        transition: all .3s ease-in-out;
+    }
+
+    .navbar-toggler-icon img {
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #00000080 !important;
+    }
+
+    header #menu li a:hover,
+    header #menu li a:active {
+        text-shadow: 0 0 15px rgba(223, 169, 49, 1)
+    }
+
+    #menu .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    .navbar-toggler {
+        width: 52px;
+        height: 52px;
+        border: none;
+        padding: 0 !important;
+    }
+
+    .navbar-toggler-icon,
+    .navbar-toggler-icon::before,
+    .navbar-toggler-icon::after {
+        background: none !important;
+        width: 52px;
+        margin: 0 !important;
+        top: 0;
+    }
+
+    .btn-close {
+        --si-btn-close-color: #DFA931;
+        --si-btn-close-bg: url(../img/close.svg);
+        background-size: contain;
+        width: 26px;
+        height: 26px;
+        padding: 0 !important;
+        opacity: 1 !important;
+    }
+
+    .btn-close:hover {
+        color: var(--si-btn-close-color);
+        text-decoration: none;
+        opacity: var(--si-btn-close-hover-opacity);
+    }
+
+    .navbar-nav {
+        align-items: center;
+    }
+
+    .nav-item {
+        padding: 0 0 48px !important;
+    }
+
+    header #navbarNav li a {
+        font-size: 26px;
+    }
+
+    .offcanvas-header {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0px 35px !important;
+        border: none !important;
+        max-width: 100vw;
+    }
+
+    .offcanvas-body {
+        margin-top: 25px;
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 100vw;
+    }
+
+    .offcanvas-header.border-top {
+        justify-content: center;
+        height: fit-content;
+        padding-bottom: 60px !important;
+    }
+
+    .offcanvas-header.border-top img {
+        height: 100px;
+
+    }
+
+    #services .cards {
+        flex-direction: column;
+    }
+
+    #services .card-body img {
+        transform: translateY(-107px);
+        right: -5%
+    }
+
+    #services .card-hover {
+        margin-right: 25px;
+        margin-left: 25px;
+        margin-bottom: 60px;
+    }
+
+    #about {
+        width: 95%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about .hero {
+        display: flex;
+    }
+
+    #about .picture {
+        width: 100%;
+    }
+
+    #about .hero {
+        align-content: center;
+        width: 100%;
+    }
+
+    #about .hero {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #about .text {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    #who-we-serve p {
+        max-width: 85vw;
+    }
+
+    #who-we-serve .img {
+        background-size: 116vw;
+        width: 620px;
+        height: 150px;
+        transform: translateY(213px);
+    }
+}
+
+@media (max-width: 669px) {
+    h2 {
+        font-size: 35px !important;
+    }
+
+    .container {
+        max-width: 100% !important;
+    }
+
+    .jarallax .jarallax-img {
+        background-position-x: left;
+    }
+
+
+    #intro .content {
+        padding-top: 0 !important;
+    }
+
+    #intro h1.display-1 {
+        font-size: 40px;
+        padding: 10px 15px 0;
+    }
+
+    #intro .container img {
+        width: 140px;
+        margin-bottom: 10px;
+    }
+
+    #intro .container p {
+        margin-bottom: 32px !important;
+        max-width: 85%;
+    }
+
+    .jarallax .jarallax-img {
+        margin-bottom: 0;
+        background-position-x: 14% !important;
+    }
+
+    #services {
+        margin-bottom: 40px !important;
+    }
+
+    #services h2 {
+        margin-bottom: 70px;
+    }
+
+    #services h3 {
+        font-size: 26px !important;
+    }
+
+    #services .card-body {
+        padding-top: 30px;
+        background: linear-gradient(-45deg, rgba(223, 169, 49, .5) 0%, rgba(237, 198, 114, .5) 50%);
+        background-image: url(../img/services_bg2.png);
+    }
+
+    #services .card-body img {
+        display: unset;
+        transform: translateY(-10px);
+        right: 5%;
+        width: 90px;
+    }
+
+    #about {
+        width: 100%;
+        padding: 0 !important;
+    }
+
+
+    #about h2 {
+        margin-top: 40px;
+    }
+
+    #about .picture {
+        display: none;
+    }
+
+    #about .hero {
+        padding-bottom: 0 !important;
+        margin-bottom: 100px;
+    }
+
+    #about .hero .text {
+        align-items: center !important;
+        text-align: center !important;
+        padding: 37px 37px 0 37px !important;
+        margin-bottom: 0;
+    }
+
+    #about .hero .text:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.25;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-size: cover;
+    }
+
+    #about .hero:first-child .text:before {
+        background-image: url(../img/about.jpg);
+    }
+
+    #about .hero:last-child .text:before {
+        background-image: url(../img/about2.jpg);
+    }
+
+    /* 
+    #about .hero:last-child {
+        margin-top: 100px;
+    } */
+
+    /* #about .hero:last-child p:first-child {
+        margin-top: 40px;
+    } */
+
+    #about .btn {
+        display: none !important;
+    }
+
+    #about .btn {
+        display: none !important;
+    }
+
+    #who-we-serve .img {
+        max-width: 100%;
+        transform: translateY(220px);
+        width: 117vw;
+    }
+
+    #who-we-serve .shine {
+        height: 65vw;
+        filter: blur(100px);
+        width: 90vw;
+        transform: translateY(290px);
+    }
+
+    #contact {
+        height: 100vh;
+        background-size: 250vh;
+        background-position: center bottom;
+    }
+
+    #contact img {
+        margin-top: 70px;
+        width: 120px;
+    }
+
+}
